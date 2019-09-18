@@ -3,8 +3,8 @@ var app = express();
 var fs = require("fs");
 
 
-app.get('/index.html', function (req, res) {
-  res.sendFile( __dirname + "/" + "index.html" );
+app.get('/music-score.html', function (req, res) {
+  res.sendFile( __dirname + "/" + "music-score.html" );
 })
 
 app.get('/listMusic', function (req, res) {
@@ -15,7 +15,7 @@ app.get('/listMusic', function (req, res) {
   });
 })
 
-var server = app.listen(8083, function () {
+var server = app.listen(1339, function () {
 
   var host = server.address().address
   var port = server.address().port
